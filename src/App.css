@@ -10,10 +10,10 @@ body {
   background-color: rgb(215, 222, 250);
 }
 
-.dailyMessages {
+/* .dailyMessages {
   justify-content: center;
   margin: 20px;
-}
+} */
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -37,6 +37,8 @@ body {
   }
 }
 
-img {
-  width: 300px;
+.footer {
+  justify-content: center;
+  margin: 5px;
+ 
 }

@@ -86,6 +86,7 @@ export default function ChatRoom({ emotionCard }) {
           size="small"
           color="error"
           aria-label="add"
+          
         ></Fab>
 
         <Fab

@@ -11,7 +11,7 @@ import { getAuth, onAuthStateChanged } from "firebase/auth";
 import { Chat } from "@mui/icons-material";
 import DailyMessageList from "./components/DailyMessagesList";
 import ChatRoom from "./components/Chat";
-
+import styled from "styled-components"
 
 export const UserContext = createContext(null);
 
