@@ -1,12 +1,13 @@
 .dailyMessages {
   justify-content: center;
   color: #363457;
+  font-size: 60px;
 }
 h1 {
   color: #363457;
 }
 body {
-  background-color: antiquewhite;
+  background-color: rgb(215, 222, 250);
 }
 
 .dailyMessages {

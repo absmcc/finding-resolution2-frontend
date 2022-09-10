@@ -1,7 +1,7 @@
 import "firebase/firestore"
 import { getAuth, createUserWithEmailAndPassword } from "firebase/auth"
 import { initializeApp } from "firebase/app"
-import { useState, useEffect } from "react"
+import { useState, useEffect, useContext } from "react"
 import { useNavigate } from "react-router-dom"
 import Typography from "@mui/material/Typography"
 import Button from "@mui/material/Button"
@@ -9,6 +9,7 @@ import Link from "@mui/material/Link"
 import TextField from "@mui/material/TextField"
 import Container from "@mui/material/Container"
 import { createTheme, ThemeProvider } from "@mui/material/styles"
+import { UserContext } from "../App"
 
 const theme = createTheme()
 
@@ -18,6 +19,7 @@ export default function Signup() {
   const [fname, setFname] = useState("")
   const navigate = useNavigate()
   const auth = getAuth()
+  const { user, setUser } = useContext(UserContext);
 
   const createUser = (uid) => {
     const user = {
@@ -40,9 +42,12 @@ export default function Signup() {
     event.preventDefault()
     createUserWithEmailAndPassword(auth, email, password)
       .then((res) => {
-        const json = JSON.stringify(res.user)
-        console.log(res.user)
-        createUser(res.user.uid)
+        const json = JSON.stringify(res.user.uid)
+        localStorage.setItem("user", json)
+        console.log("user in login", res.user)
+        setUser(res.user.uid)
+        navigate("/")
+        //createUser(res.user.uid)
       })
       .catch((err) => alert(err.message))
   }

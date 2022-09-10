@@ -1,7 +1,6 @@
 // import dailymessages from "./DailyMessages";
 import { useEffect, useState } from "react"
 import Carousel from 'react-material-ui-carousel'
-//import Carousel from "nuka-carousel"
 import { Container } from "@mui/system"
 
 function DailyMessageList() {
@@ -24,7 +23,7 @@ function DailyMessageList() {
         ) : (
           messages.map((message) => (
             <div className="dailyhMessage">
-                <Container maxWidth="sm" />
+                <Container maxWidth="lg" />
               <p key={message.id}>{message.message}</p>
             </div>
           ))
