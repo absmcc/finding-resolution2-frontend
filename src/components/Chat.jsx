@@ -69,46 +69,52 @@ export default function ChatRoom({ emotionCard }) {
 
         <span ref={dummy}></span>
       </main>
+      <div className="input-container">
+        <form onSubmit={sendMessage}>
+          <input
+            value={formValue}
+            onChange={(e) => setFormValue(e.target.value)}
+            placeholder=""
+            />
+            </form>
 
-      <form onSubmit={sendMessage}>
-        <input
-          value={formValue}
-          onChange={(e) => setFormValue(e.target.value)}
-          placeholder=""
-        />
-
-        {/* <Button type="submit">SEND</Button> */}
-
-        <Fab
-          onClick={(e) => {
-            setColor("upset")
-          }}
-          size="small"
-          color="error"
-          aria-label="add"
+          {/* <Button type="submit">SEND</Button> */}
+          <div className="fab-container">
+           
+              <Fab
+                onClick={(e) => {
+                  setColor("upset")
+                }}
+                size="medium"
+                color="error"
+                aria-label="add"
+              ></Fab>
+            
+            
+              <Fab
+                onClick={(e) => {
+                  setColor("notReady")
+                }}
+                size="medium"
+                color="warning"
+                aria-label="add"
+                setColor
+              ></Fab>
+           
           
-        ></Fab>
-
-        <Fab
-          onClick={(e) => {
-            setColor("notReady")
-          }}
-          size="small"
-          color="warning"
-          aria-label="add"
-          setColor
-        ></Fab>
-
-        <Fab
-          onClick={(e) => {
-            setColor("ready")
-          }}
-          size="small"
-          color="success"
-          aria-label="add"
-          setColor
-        ></Fab>
-      </form>
+              <Fab
+                onClick={(e) => {
+                  setColor("ready")
+                }}
+                size="medium"
+                color="success"
+                aria-label="add"
+                setColor
+                
+              ></Fab>
+           
+          </div>
+      </div>
     </>
   )
 }

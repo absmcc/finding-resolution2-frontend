@@ -7,13 +7,11 @@ h1 {
   color: #363457;
 }
 body {
-  background-color: rgb(215, 222, 250);
+  background-color: #CEE7F1;
+  /* background-color: aquamarine; */
 }
 
-/* .dailyMessages {
-  justify-content: center;
-  margin: 20px;
-} */
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -24,21 +22,4 @@ body {
   color: white;
 }
 
-.App-link {
-  color: #e4751a;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-.footer {
-  justify-content: center;
-  margin: 5px;
- 
-}

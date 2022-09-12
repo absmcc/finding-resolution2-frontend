@@ -4,14 +4,14 @@ main {
   color: white;
   display: flex;
   flex-direction: column;
-  background-color: hsl(206, 57%, 81%);
+  background-color: hsl(206, 92%, 47%);
 }
 
 form {
   height: 10vh;
   position: initial;
   bottom: 0;
-  margin: 10px;
+
   width: 100%;
   max-width: 100;
   display: flex;
@@ -20,23 +20,23 @@ form {
 
 form button {
   width: 20%;
-  background-color: #17acca;
+  background-color: black;
 }
 
 input {
   line-height: 1.5;
-  width: 85%;
+  width: 100%;
   font-size: 1.5rem;
-  background: #9ca3ff;
+  background: hsl(206, 92%, 47%);
   color: #363457;
   outline: none;
   border: none;
-  padding: 0 10px;
+  /* padding: 0px; */
   border-radius: 10px;
 }
 
 button {
-  background-color: #282c34; /* Green */
+  background-color: #282c34;
   border: none;
   color: white;
   padding: 15px 32px;
@@ -54,6 +54,8 @@ p {
   border-radius: 25px;
   position: relative;
   text-align: center;
+  color: orange;
+  
 }
 
 button:disabled {
@@ -79,7 +81,7 @@ button:disabled {
   background: white;
   color: black;
 }
-uimg {
+.uimg {
   width: 20px;
   height: 40px;
   border-radius: 50%;
@@ -102,4 +104,28 @@ uimg {
 
 .ready {
   background-color: green;
+}
+.fab-container {
+  display: flex;
+  align-items: center;
+
+ 
+  
+}
+
+.input-container {
+  display: flex;
+  margin: 20px;
+  
+}
+.form-container {
+  display: flex;
+  justify-content: center;
+ 
+
+
+}
+.form-items {
+  display: block;
+  width: 300px;
 }

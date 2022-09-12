@@ -37,5 +37,4 @@ export default function Navbar() {
       </div>
     </>
   )
-}
-<img src="https://hccounseling.com/wp-content/uploads/2019/07/hopecc-logo_2019_color200.png" srcset="https://hccounseling.com/wp-content/uploads/2019/07/hopecc-logo_2019_color200.png 1x, https://hccounseling.com/wp-content/uploads/2019/07/hopecc-logo_2019_color400.png 2x" width="200" height="67" style="max-height:67px;height:auto;" alt="Hope Christian Counseling Logo" data-retina_logo_url="https://hccounseling.com/wp-content/uploads/2019/07/hopecc-logo_2019_color400.png" class="fusion-standard-logo"></img>
+}   
