@@ -1,5 +1,5 @@
 import React from "react"
-import Hero from "../components/Hero"
+//import Hero from "../components/Hero"
 import DailyMessageList from "../components/DailyMessagesList"
 import Chat from "../components/Chat"
 
@@ -7,7 +7,9 @@ export default function Home() {
   return (
     <>
       {/* <Hero /> */}
-      <DailyMessageList/>
+      <div className="dailymessages">
+        <DailyMessageList />
+      </div>
       <Chat />
     </>
   )

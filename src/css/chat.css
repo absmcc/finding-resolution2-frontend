@@ -5,6 +5,9 @@ main {
   display: flex;
   flex-direction: column;
   background-color: hsl(206, 92%, 47%);
+  height: 325px;
+  width: 908px;
+  position: relative;
 }
 
 form {
@@ -50,11 +53,14 @@ button {
 p {
   margin-bottom: 12px;
   line-height: 24px;
-  padding: 10px 20px;
+  padding: 12px 20px;
   border-radius: 25px;
   position: relative;
   text-align: center;
   color: #301057;
+  font-size: medium;
+  font-style: italic;
+  font-weight: bolder;
   
 }
 
