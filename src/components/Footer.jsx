@@ -1,5 +1,6 @@
 import "../css/footer.css"
 import github from "../assets/github.png"
+import linkedin from "../assets/linkedin.png"
 
 const Footer = () => {
   return (
@@ -10,6 +11,11 @@ const Footer = () => {
           <a href="https://github.com/absmcc" target="blank">
             <img className="github" src={github} alt="Link to my GitHub" />
           </a>
+        <div className="logos-contaiiner">
+          <a href="https://www.linkedin.com/in/maria-carson-4413571a/" target="blank">
+            <img className="linkedin" src={linkedin} alt="Link to my Linked In" />
+          </a>
+          </div>
         </div>
       </footer>
 
